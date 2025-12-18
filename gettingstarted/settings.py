@@ -64,7 +64,7 @@ if os.environ.get('IS_HEROKU_APP') == '1':
 if os.environ.get('ALLOWED_HOSTS'):
     ALLOWED_HOSTS.extend(os.environ.get('ALLOWED_HOSTS').split(','))
 
-if IS_HEROKU_APP:
+
     
     # Redirect all non-HTTPS requests to HTTPS. This requires that:
     # 1. Your app has a TLS/SSL certificate, which all `*.herokuapp.com` domains do by default.
